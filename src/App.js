@@ -46,7 +46,7 @@ function App() {
   const [loading, loadingC] = useState(false);
 
   useEffect(()=>{
-    axios.get('https://whitedog1004.github.io/shoes/data2.json')
+    axios.get('https://raw.githubusercontent.com/WhiteDog1004/ShoesShop/main/shoes/data2.json')
     .then((result)=>{
       let copy = [...result.data];
       var copyDefault = [...shoes, ...copy];
@@ -177,7 +177,7 @@ function App() {
                             //로딩 표시
                             loadingC(true);
 
-              axios.get('https://whitedog1004.github.io/shoes/data2.json')
+              axios.get('https://raw.githubusercontent.com/WhiteDog1004/ShoesShop/main/shoes/data2.json')
               .then((result)=>{
                 let copy = [...result.data];
                 // let splice = copy.splice(0, shoesAdd.length);
@@ -279,7 +279,7 @@ function Item(props){
           return(
             <div className='col-md-4' key={i}>
               <Link to={'/detail/'+ (num.id)} >
-                <img src={'https://whitedog1004.github.io/ShoesShop/shoes'+ (num.id + 1) +'.jpg'} width='100%' alt={i}></img>
+                <img src={'https://raw.githubusercontent.com/WhiteDog1004/ShoesShop/main/shoes/shoes'+ (num.id + 1) +'.jpg'} width='100%' alt={i}></img>
                 <h4>{ num.title }</h4>
                 <span>{ num.content}</span>
                 <p>{ num.price }원</p>

@@ -36,7 +36,7 @@ const Watch = () => {
                             return (
                                 <div className='watchBox_title'>
                                     <li key={i}>
-                                        <img src={'https://whitedog1004.github.io/shoes/shoes'+ (watch[i].id + 1) +'.jpg'} width='100%' alt={i}/> 
+                                        <img src={'https://raw.githubusercontent.com/WhiteDog1004/ShoesShop/main/shoes/shoes'+ (watch[i].id + 1) +'.jpg'} width='100%' alt={i}/> 
                                     </li>
                                     <div>                                       
                                         <h1>{num.title}</h1>

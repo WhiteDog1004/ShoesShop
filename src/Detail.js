@@ -101,7 +101,7 @@ function Detail(props) {
             <div className="container">
                 <div className="row detailBg">
                     <div className="col-md-6">
-                        <img src={'https://whitedog1004.github.io/ShoesShop/shoes'+ (idNum + 1) +'.jpg'} width="100%" />
+                        <img src={'https://raw.githubusercontent.com/WhiteDog1004/ShoesShop/main/shoes/shoes'+ (idNum + 1) +'.jpg'} width="100%" />
                     </div>
                     <div className="col-md-6 mt-4 textBox">
                         <h4 className="pt-5">{ findItem.title}</h4>
@@ -160,7 +160,7 @@ function TabContent(props){
 
     if(props.onTab === 0) {
         return <div className='tabContent'>
-                    <div className='tabFirst'><img src='https://whitedog1004.github.io/shoes/detail_product.jpg'/></div>
+                    <div className='tabFirst'><img src='https://raw.githubusercontent.com/WhiteDog1004/ShoesShop/main/shoes/shoes/detail_product.jpg'/></div>
                     <p>나쁘지않네요</p>
                     <p>당장 구매 ㄱㄱ</p>
                 </div>
