@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/ShoesShop/static/css/main.50f81fa9.chunk.css",
+    "main.js": "/ShoesShop/static/js/main.27764f25.chunk.js",
+    "main.js.map": "/ShoesShop/static/js/main.27764f25.chunk.js.map",
+    "runtime-main.js": "/ShoesShop/static/js/runtime-main.2f34023d.js",
+    "runtime-main.js.map": "/ShoesShop/static/js/runtime-main.2f34023d.js.map",
+    "static/css/2.abcd5c43.chunk.css": "/ShoesShop/static/css/2.abcd5c43.chunk.css",
+    "static/js/2.3bd09865.chunk.js": "/ShoesShop/static/js/2.3bd09865.chunk.js",
+    "static/js/2.3bd09865.chunk.js.map": "/ShoesShop/static/js/2.3bd09865.chunk.js.map",
+    "static/js/3.09725915.chunk.js": "/ShoesShop/static/js/3.09725915.chunk.js",
+    "static/js/3.09725915.chunk.js.map": "/ShoesShop/static/js/3.09725915.chunk.js.map",
+    "static/js/4.8dc50485.chunk.js": "/ShoesShop/static/js/4.8dc50485.chunk.js",
+    "static/js/4.8dc50485.chunk.js.map": "/ShoesShop/static/js/4.8dc50485.chunk.js.map",
+    "index.html": "/ShoesShop/index.html",
+    "static/css/2.abcd5c43.chunk.css.map": "/ShoesShop/static/css/2.abcd5c43.chunk.css.map",
+    "static/css/main.50f81fa9.chunk.css.map": "/ShoesShop/static/css/main.50f81fa9.chunk.css.map",
+    "static/js/2.3bd09865.chunk.js.LICENSE.txt": "/ShoesShop/static/js/2.3bd09865.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.2f34023d.js",
+    "static/css/2.abcd5c43.chunk.css",
+    "static/js/2.3bd09865.chunk.js",
+    "static/css/main.50f81fa9.chunk.css",
+    "static/js/main.27764f25.chunk.js"
+  ]
+}
