@@ -90,7 +90,7 @@ function App() {
                     localStorage.setItem('login', JSON.stringify(login));
                     window.location.reload();
                   } else {
-                    window.location.href ='/#/login'
+                    window.location.href ='/ShoesShop/#/login'
                   }
               }}>
                 <FontAwesomeIcon icon={faUser}/>{ loginText }</Nav.Link>
