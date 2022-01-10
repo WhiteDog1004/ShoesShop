@@ -146,7 +146,7 @@ function Sign(){
                             
                             localStorage.setItem('info' ,JSON.stringify(info) );
                             console.log(info);
-                            window.location.href = '/#/signAccess'
+                            window.location.href = '/ShoesShop/#/signAccess'
                         }
                     }}>가입하기</Button>
                 </div>

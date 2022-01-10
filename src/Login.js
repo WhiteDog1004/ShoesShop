@@ -86,7 +86,7 @@ function Login(){
                                 loginAccess = JSON.parse(loginAccess);
                                 loginAccess = 1;
                                 localStorage.setItem('login', JSON.stringify(loginAccess));
-                                window.location.href = '/#/'
+                                window.location.href = '/ShoesShop/#/'
                                 window.location.reload();
                             }
                         }
