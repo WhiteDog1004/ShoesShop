@@ -1,0 +1,44 @@
+[
+    {
+      "id" : 6,
+      "title" : "털가죽 신발 (블루)",
+      "content" : "only 5 inches",
+      "price" : 170000,
+      "stock" : 32
+    },
+    {
+      "id" : 7,
+      "title" : "베이비 하트 신발 (핑크)",
+      "content" : "for less than 6",
+      "price" : 200000,
+      "stock" : 17
+    },
+    {
+      "id" : 8,
+      "title" : "블루 니트 신발",
+      "content" : "Born in France",
+      "price" : 80000,
+      "stock" : 12
+    },
+    {
+      "id" : 9,
+      "title" : "가죽 런닝 신발",
+      "content" : "only 5 inches",
+      "price" : 170000,
+      "stock" : 11
+    },
+    {
+      "id" : 10,
+      "title" : "가죽 구두",
+      "content" : "for less than 6",
+      "price" : 200000,
+      "stock" : 19
+    },
+    {
+      "id" : 11,
+      "title" : "블랙 하이힐",
+      "content" : "Born in France",
+      "price" : 80000,
+      "stock" : 10
+    }
+]
