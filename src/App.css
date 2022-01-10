@@ -36,3 +36,51 @@
     transform: rotate(360deg);
   }
 }
+.navBar a {
+  list-style: none;
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.644);
+}
+.navBar a:hover {
+  color: white;
+  transition: 0.3s;
+}
+
+.container {
+  transition: all 0.2s;
+}
+
+.btn {
+  margin: 10px 10px;
+}
+
+.listSet {
+  margin: 10px;
+}
+.col {
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: flex-end;
+}
+.col-md-4 {
+  overflow: hidden;
+  padding: 10px;
+}
+.col-md-4 a {
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.col-md-4 img {
+  margin: 5px;
+  border-radius: 10px;
+}
+.col-md-4:hover a {
+  color: rgba(0, 0, 0, 1);
+  transition: 0.25s;
+}
+.col-md-4:hover img{ 
+  transform: scale(1.05);
+  transition: 0.25s;
+}

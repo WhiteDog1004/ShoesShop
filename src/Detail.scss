@@ -1,0 +1,772 @@
+@import './reset.scss';
+
+$mainColor : white;
+$subColor : rgba(0, 0, 0, 0.5);
+
+
+.detailBg {
+    color: $mainColor;
+    margin: 20px;
+}
+.mt-4 {
+    margin-top: 0 !important;
+}
+.pt-5 {
+    padding: 0 !important;
+    font-size: 32px;
+    margin: 16px auto;
+}
+
+.col-md-6{
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+// @@@@@@@@@@@@ main slide @@@@@@@@@@@@@@@
+
+.slider {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    text-align: center;
+}
+.slider img {
+    width : 100%;
+    height: 500px;
+    object-fit: cover;
+}
+.slide {
+    position: relative;
+}
+.slide div {
+    position: absolute;
+    width: 40%;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: transparent;
+    box-shadow: 0 25px 50px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(3px);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: rgba(255, 255, 255, 0.75);
+    text-align: center;
+    border-radius: 20px;
+}
+.slide div p {
+    font-size: 0.6em;
+    margin: 8px 0;
+}
+.slideText3 {
+    color: rgba(255, 255, 255, 0.75) !important;
+}
+
+
+.slick-dots {
+    width: 20%;
+    padding: 0;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 2%;
+    list-style: none;
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+}
+.slick-dots li button {
+    position: relative;
+    background: none;
+    border: none;
+    font-size: 0;
+    width: 30px;
+    height: 30px;
+    margin: 0 auto;
+}
+.slick-dots li:hover button::before{
+    opacity: .75;
+    color: rgb(0, 0, 0); 
+}
+.slick-dots li button:before { 
+    font-family: 'slick'; 
+    font-size: 40px; 
+    line-height: 30px;
+    position: absolute; 
+    top: 50%; 
+    left: 0;
+    transform: translateY(-50%);
+    width: 30px; 
+    height: 30px; 
+    content: '•'; 
+    text-align: center; 
+    opacity: .5; 
+    color: rgb(255, 255, 255); 
+    -webkit-font-smoothing: antialiased; 
+    -moz-osx-font-smoothing: grayscale; 
+} 
+.slick-dots li.slick-active button:before { 
+    opacity: .75;
+    transform: translateY(-50%) scale(1.5);
+    color: rgb(0, 0, 0); 
+    transition: all 0.3s;
+}
+
+.slick-prev {
+    position: absolute;
+    z-index: 99;
+    top: 50%;
+    color: white;
+    opacity: 0.7;
+    left: 1%;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+.slick-next {
+    position: absolute;
+    z-index: 99;
+    top: 50%;
+    color: white;
+    opacity: 0.7;
+    right: 1%;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+
+
+// .jumbo {
+//     position: relative;
+//     padding: 0;
+//     width: 100%;
+//     height: 60em;
+//     max-height: 500px;
+//     overflow: hidden;
+// }
+// .slide {
+//     position: absolute;
+//     top: 0;
+//     width: 100%;
+//     height: 500px;
+//     padding: 0;
+//     font-size: large;
+//     color: white;
+//     list-style: none;
+//     display: flex;
+//     flex-direction: column;
+//     align-items: center;
+//     justify-content: center;
+//   }
+//   .slide img {
+//       position: absolute;
+//       z-index: -1;
+//   }
+//   .jumbo p {
+//       width: 50%;
+//       margin: 0 auto;
+//   }
+//   .slideText {
+//       position: absolute;
+//       width: 15%;
+//       height: 500px;
+//       padding: 0;
+//       color: white;
+//       z-index: 999;
+//       list-style: none;
+//   }
+//   .slideText li {
+//       width: 100%;
+//       height: 25%;
+//       display: flex;
+//       justify-content: center;
+//       align-items: center;
+//       cursor: pointer;
+//       background: rgba(0, 0, 0, 0.7);
+//   }
+//   .slideText li:hover {
+//     background: rgba(0, 0, 0, 1);
+//     transition: all 0.3s;
+//   }
+
+  // 애니메이션 시작 때 적용할 CSS
+.onAnime-enter {
+    opacity: 0.7;
+}
+
+// 애니메이션 동작 때 적용할 CSS
+.onAnime-enter-active {
+    opacity: 1;
+    transition: 0.25s;
+}
+
+
+
+// @@@@@@@@@@@@@@ list.js @@@@@@@@@@@@@@
+
+.listBox {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.textBox {
+    border-radius: 20px;
+    background: #212121;
+}
+.alertName {
+    padding: 20px;
+    h1 {
+        margin: 0;
+    }
+}
+.col-md-4 p {
+    margin-bottom: 0;
+}
+// @@@@@@@@@@@@@@@@@ watch.js @@@@@@@@@@@@@@
+.watchBox {
+    width: 60%;
+    margin: 0 auto;
+    padding: 5px;
+}
+.watchBox_title {
+    margin: 20px 0;
+    -webkit-box-shadow: 0px 10px 13px -7px #000000, -32px -35px 3px -7px rgba(0,0,0,0); 
+    box-shadow: 0px 10px 13px -7px #00000080, -32px -35px 3px -7px rgba(0,0,0,0);
+    display: flex;
+    overflow: hidden;
+}
+.watchBox ul {
+    padding-left: 0 !important;
+    margin-bottom: 0 !important;
+}
+.watchBox ul li {
+    width: 50%;
+    list-style: none;
+    opacity: 0.5;
+    cursor: pointer;
+}
+.watchBox > p {
+    font-size: 1.2em;
+    color: rgba(0, 0, 0, 0.7);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.6);
+    padding: 10px 0;
+}
+.watchBox ul li:hover {
+    opacity: 1;
+    transition: 0.3s;
+}
+.watchBox ul li:hover img {
+    transform: scale(1.1);
+    opacity: 1;
+    transition: 0.3s;
+}
+.watchBox_title div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: white;
+    z-index: 2;
+    text-align: center;
+    margin: 0 auto;
+}
+.watchBox_title div h1 {
+    width: 100%;
+    font-size: 1.3em;
+}
+
+.watchBox_title div p {
+    font-size: 1em;
+    margin-bottom: 0;
+}
+.watchBox_title div .btn {
+    text-align: center;
+    right: 0;
+    width: 8em;
+    margin: 0.5em 0;
+}
+.notWatch {
+    width: 100%;
+    height: 50vh;
+    font-size: 1.3em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.alertBox {
+    font-size: 18px;
+    width: 100%;
+    max-width: 400px;
+    border: 1px solid black;
+    box-shadow: 5px 5px 15px 2px rgba(0,0,0,0.5);
+    padding: 10px;
+    border-radius: 20px;
+    margin: 10px auto
+}
+
+//@@@@@ nesting 문법
+
+// div.container {
+//     h4 {
+//         color : blue;
+//     }
+
+//     p {
+//         color : green;
+//     }
+// }
+
+// @@@@@ @extend 복붙하는 문법
+
+// div.container2 {
+// @extend .div.container2;
+// }
+
+// @@@@@@@@@@@@@@ tabContent @@@@@@@@@@@@@
+
+.tabMenu {
+    justify-content: center;
+}
+.tabMenu a {
+    color: rgb(177, 177, 177);
+}
+.tabMenu a:hover {
+    color: black;
+}
+.tabContent {
+    margin-top: 10px;
+}
+.tabContent p {
+    padding: 20px;
+    margin: 0 auto;
+}
+
+.tabFirst img {
+    width: 100%;
+}
+
+// 애니메이션 시작 때 적용할 CSS
+.tabAnime-enter {
+    opacity: 0;
+}
+
+// 애니메이션 동작 때 적용할 CSS
+.tabAnime-enter-active {
+    opacity: 1;
+    transition: 0.5s;
+}
+
+
+
+// @@@@@@@@@@@@@@@@@@@@ Cart.js @@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+
+
+.noneCart {
+    width: 100%;
+    display: flex;
+}
+.noneCart svg {
+    position: absolute;
+    transform: translate(-50%, -50%) scale(20);
+    top: 50%;
+    left: 50%;
+    opacity: 0.15;
+}
+.noneCart div {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+}
+.noneCart div p {
+    font-size: 18px;
+    margin: 0;
+    font-weight: 600;
+}
+.noneCart div span {
+    font-size: 12px;
+    white-space: nowrap;
+}
+
+.table {
+    width: 80%;
+    margin: 10px auto;
+    table-layout: fixed;
+}
+.cartTr {
+    align-items: center;
+    vertical-align: middle;
+}
+
+.cartName a {
+    text-decoration: none;
+    color: rgb(255, 42, 42);
+}
+.cartBtn button {
+    margin: 5px 5px;
+}
+
+// @@@@@@@@@@@@@@@@ spinner.js @@@@@@@@@@@@@@@@
+.spinner {
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.3);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+}
+
+
+// @@@@@@@@@@@@@@@@@@@@@@ Product.js @@@@@@@@@@@@@@@@@@@@@@@@@
+.productBox {
+    position: relative;
+    width: 100%;
+    height: 600px;
+    margin-top: 10px;
+    overflow: hidden;
+}
+.productBox button{
+    margin: 10px 0;
+}
+.fadeLeftBox {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    animation: fadeLeft 1s linear;
+    animation-fill-mode: forwards;
+}
+.productBox:hover img {
+    transform: scale(1.1);
+    transition: all 0.3s;
+}
+.fadeLeftBox img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+@keyframes fadeLeft {
+    0% {
+        transform: translate(-10%, -50%); 
+        opacity: 0;
+        }
+    100% {
+        transform: translate(0, -50%); 
+          opacity: 1;
+         }
+}
+
+
+.fadeRightBox {
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    top: 50%;
+    right: 0;
+    animation: fadein 1s linear;
+    // animation-delay: 1s;
+    animation-fill-mode: forwards;
+    opacity: 0;
+    text-align: right;
+    font-size: 0.8em;
+}
+@keyframes fadein {
+    0% {
+        transform: translate(0, -100%); 
+        opacity: 0;
+        }
+    100% {
+          transform: translate(0, -50%);
+          opacity: 1;
+         }
+}
+.fadeRightBox div {
+    position: absolute;
+    width: 50%;
+    top: 30%;
+    left: 60%;
+    transform: translate(-50%, -50%);
+    color: white;
+}
+.fadeRightBox p {
+    margin-bottom: 0;
+}
+
+// @@@@@@@@@@@@@@@@ fourProductBox @@@@@@@@@@@@
+
+.fourProductBox {
+    width: 100%;
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 2px;
+    font-size: 0.8em;
+}
+
+.fourProductBox > div {
+    position: relative;
+    width: 49%;
+    height: 48%;
+    background-color: rgba(0, 0, 0, 0.336);
+    margin: 5px auto;
+    padding: 0;
+}
+.fourProductBox > div > img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    margin: 0;
+    border-radius: 0;
+    padding: 0;
+}
+.productTextBox {
+    position: absolute;
+    padding: 10px;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    color: rgba(0, 0, 0, 0.75);
+    text-align: left;
+}
+.productTextBox_02 {
+    position: absolute;
+    padding: 10px;
+    top: 0;
+    right: 0;
+    z-index: 1;
+    color: rgba(0, 0, 0, 0.75);
+    text-align: right;
+}
+.productTextBox_03 {
+    position: absolute;
+    padding: 10px;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+    color: rgba(255, 255, 255, 0.75);
+    text-align: left;
+}
+.productTextBox_04 {
+    position: absolute;
+    padding: 10px;
+    bottom: 0;
+    right: 0;
+    z-index: 1;
+    color: rgba(255, 255, 255, 0.75);
+    text-align: right;
+}
+.fourProductBox > div > div > button {
+    margin: 10px 0 0 0;
+}
+
+@media (max-width: 768px) {
+    .fourProductBox {
+        height: auto;
+    }
+    .fourProductBox > div {
+    width: 100%;
+    height: auto;
+    }
+    .fourProductBox > div > img {
+        height: 300px;
+    }
+}
+
+// @@@@@@@@@@@@@@@@ youtube Movie @@@@@@@@@@@@@@@
+.movieBox{
+    position: relative;
+    width: 100%;
+}
+.movieBox video {
+    width: 100%;
+    height: auto;
+}
+.movieBox div {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 30px;
+    margin: 0;
+    color: rgba(255, 255, 255, 0.5);
+    text-align: right;
+}
+.movieBox div h1 {
+    font-weight: 700;
+    font-size: 62px;
+    margin: 0;
+}
+.movieBox div h2 {
+    font-weight: 500;
+    font-size: 42px;
+    margin: 0;
+}
+
+
+// @@@@@@@@@@@@@@ Footer.js @@@@@@@@@@@@@@@@@
+
+.footerText span{
+    position: relative;
+    padding: 0 10px;
+}
+.footerText span a,
+.footerText p{
+    text-decoration: none;
+    color: #707070;
+}
+.footerText span::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0;
+    width: 1px;
+    height: 50%;
+    background: #707070;
+}
+.footerText span:nth-child(2)::before {
+    display: none;
+}
+
+// @@@@@@@@@@@@@@ Login.js @@@@@@@@@@@@@@@@
+
+.login {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.loginBox {
+    width: 300px;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    -webkit-box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.39); 
+    box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.39);
+    border-radius: 20px;
+}
+.loginBox div p {
+    margin-bottom: 0;
+    display: flex;
+}
+.loginBox div {
+    text-align: left;
+}
+.loginBox div input {
+    width: 150px;
+    margin-bottom: 10px;
+}
+.loginBox button {
+    width: 150px;
+    margin: 5px auto;
+}
+.loginBox .btn {
+    width: 150px;
+    text-decoration: none;
+    color: white;
+}
+.emptyLoginId,
+.emptyLoginPw {
+    display: flex;
+    align-items: center;
+}
+.emptyLoginId p:nth-child(2),
+.emptyLoginPw p:nth-child(2) {
+    color: red;
+    font-size: 8px;
+}
+
+
+
+// @@@@@@@@@ Sign.js @@@@@@@@@@
+.sign {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.signBox {
+    width: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    -webkit-box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.39); 
+    box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.39);
+    border-radius: 20px;
+}
+.signBox div {
+    text-align: left;
+}
+.signBox div div {
+    display: flex;
+    align-items: center;
+}
+.signBox h4 {
+    font-size: 18px;
+    margin-top: 5px;
+    margin-bottom: 0px;
+}
+.signBox svg {
+    margin-left: -20px;
+}
+.signBox p {
+    margin-top: 5px;
+    margin-bottom: 0px;
+    font-size: 9px;
+    color: rgba(255, 0, 0, 0.7);
+    display: flex;
+}
+.signBox span {
+    font-size: 8px;
+}
+.formBox input {
+    margin-bottom: 10px;
+}
+.gender {
+    width: 20px;
+    margin: 10px;
+}
+#man, #woman {
+    margin: 0;
+}
+#woman {
+    margin-left: 10px;
+}
+.signBox input {
+    outline: medium;
+}
+
+.access {
+    display: flex;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+.access div {
+    padding: 20px;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    border-radius: 20px;
+    -webkit-box-shadow: -10px 0px 13px -7px #0000008e, 10px 0px 13px -7px #0000008e, 2px 4px 5px 8px rgba(0,0,0,0); 
+    box-shadow: -10px 0px 13px -7px #0000008e, 10px 0px 13px -7px #0000008e, 2px 4px 5px 8px rgba(0,0,0,0);
+}
