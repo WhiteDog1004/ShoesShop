@@ -101,7 +101,7 @@ function Detail(props) {
             <div className="container">
                 <div className="row detailBg">
                     <div className="col-md-6">
-                        <img src={'https://whitedog1004.github.io/shoes/shoes'+ (idNum + 1) +'.jpg'} width="100%" />
+                        <img src={'https://whitedog1004.github.io/ShoesShop/shoes'+ (idNum + 1) +'.jpg'} width="100%" />
                     </div>
                     <div className="col-md-6 mt-4 textBox">
                         <h4 className="pt-5">{ findItem.title}</h4>

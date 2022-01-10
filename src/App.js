@@ -46,7 +46,7 @@ function App() {
   const [loading, loadingC] = useState(false);
 
   useEffect(()=>{
-    axios.get('https://github.com/WhiteDog1004/ShoesShop/tree/main/public/shoes/data2.json')
+    axios.get('https://whitedog1004.github.io/shoes/data2.json')
     .then((result)=>{
       let copy = [...result.data];
       var copyDefault = [...shoes, ...copy];
@@ -279,7 +279,7 @@ function Item(props){
           return(
             <div className='col-md-4' key={i}>
               <Link to={'/detail/'+ (num.id)} >
-                <img src={'https://whitedog1004.github.io/shoes/shoes'+ (num.id + 1) +'.jpg'} width='100%' alt={i}></img>
+                <img src={'https://whitedog1004.github.io/ShoesShop/shoes'+ (num.id + 1) +'.jpg'} width='100%' alt={i}></img>
                 <h4>{ num.title }</h4>
                 <span>{ num.content}</span>
                 <p>{ num.price }원</p>
