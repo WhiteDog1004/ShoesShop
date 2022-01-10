@@ -46,7 +46,7 @@ function App() {
   const [loading, loadingC] = useState(false);
 
   useEffect(()=>{
-    axios.get('https://whitedog1004.github.io/shoes/data2.json')
+    axios.get('https://github.com/WhiteDog1004/ShoesShop/tree/main/public/shoes/data2.json')
     .then((result)=>{
       let copy = [...result.data];
       var copyDefault = [...shoes, ...copy];
