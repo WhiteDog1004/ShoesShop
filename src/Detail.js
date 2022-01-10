@@ -160,7 +160,7 @@ function TabContent(props){
 
     if(props.onTab === 0) {
         return <div className='tabContent'>
-                    <div className='tabFirst'><img src='https://raw.githubusercontent.com/WhiteDog1004/ShoesShop/main/shoes/shoes/detail_product.jpg'/></div>
+                    <div className='tabFirst'><img src='https://raw.githubusercontent.com/WhiteDog1004/ShoesShop/main/shoes/detail_product.jpg'/></div>
                     <p>나쁘지않네요</p>
                     <p>당장 구매 ㄱㄱ</p>
                 </div>
